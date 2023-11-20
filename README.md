@@ -15,12 +15,14 @@
 4.if cv2.countNonZero(threshold) > 500:
 
 
+
 2. node.js를 통해, 캡쳐 이미지 전송 서버 구축
 
 - 서버에 최종 이미지 업로드
 1.server_url = 'http://localhost:8000/upload'
 2.files = {'image': open('final_captured_image.jpg', 'rb')}
 3.response = requests.post(server_url, files=files)
+
 
 
 # 구성도
