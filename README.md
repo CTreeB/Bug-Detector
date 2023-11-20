@@ -23,6 +23,15 @@
 2.files = {'image': open('final_captured_image.jpg', 'rb')}
 3.response = requests.post(server_url, files=files)
 
+4)피드백
+1. 서빙 봇에서 만들었던, 프로그램을 사용하여, 확장성 이용
+2. 2채널 통신 : turtlebot3 ↔ Laptopt, Laptop(Server) ↔ Client
+A.	software definition food serving system.
+B.	server ↔ client 통신 프로그램 통신 재활용 가능
+C.	프로그램 확장성 사용 예) 빈대(bed-bug) 탐지 및 사진 전송
+
+3. 벌레의 마지막 움직임을 포착하여, 사진을 캡쳐함. -> 카메라 화면 모서리 부분만 벌레가 인식이 될 수 있음.
+- 개선점: open cv – rectangle함수를 활용하여, 사용자가 지정한 사각형을 카메라 영상화면에 표시한 한다. -> 벌레가 사각형을 벗어나는 순간, 사진을 캡쳐함.
 
 
 # 구성도
